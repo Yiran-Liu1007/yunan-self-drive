@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云南五日自驾游详细攻略</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Kalam', '华文行楷', '楷体', cursive;
+            background: linear-gradient(135deg, #f5f5dc 0%, #faf0e6 50%, #fff8dc 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .header h1 {
+            color: #8b4513;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header p {
+            color: #cd853f;
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        
+        .route-info {
+            background: linear-gradient(45deg, #98fb98, #90ee90);
+            color: #006400;
+            padding: 15px 20px;
+            border-radius: 15px;
+            margin-top: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        .travel-preparation {
+            background: rgba(255, 248, 220, 0.9);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 2px solid #f0e68c;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .prep-title {
+            color: #b8860b;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .prep-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .prep-item {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 5px solid #daa520;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .prep-item h4 {
+            color: #8b4513;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+        }
+        
+        .day-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 25px;
+            padding: 30px;
+            margin-bottom: 35px;
+            box-shadow: 0 12px 45px rgba(0, 0, 0, 0.12);
+            border: 2px solid #f5deb3;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .day-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
+        }
+        
+        .day-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+        }
+        
+        .day-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #f5deb3;
+        }
+        
+        .day-info {
+            flex: 1;
+        }
+        
+        .day-number {
+            background: linear-gradient(45deg, #deb887, #f5deb3);
+            color: #8b4513;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-left: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+        
+        .date {
+            font-size: 1.4rem;
+            color: #8b4513;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .theme {
+            font-size: 1.2rem;
+            color: #cd853f;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+        }
+        
+        .driving-info {
+            background: linear-gradient(45deg, #e3f2fd, #bbdefb);
+            color: #1565c0;
+            padding: 15px 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        .weather-clothing {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .weather {
+            background: linear-gradient(45deg, #87ceeb, #b0e0e6);
+            color: #2f4f4f;
+            padding: 15px 18px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+        }
+        
+        .clothing {
+            background: linear-gradient(45deg, #ffc0cb, #ffb6c1);
+            color: #8b0000;
+            padding: 15px 18px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+        }
+        
+        .time-section {
+            margin: 25px 0;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 15px;
+            border-left: 5px solid #4caf50;
+        }
+        
+        .time-title {
+            color: #2e7d32;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .time-content {
+            color: #424242;
+            line-height: 1.8;
+        }
+        
+        .dining-accommodation {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin: 25px 0;
+        }
+        
+        .section-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid #e0e0e0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            color: #8b4513;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .editable {
+            background: #fff9f0;
+            border: 2px dashed #deb887;
+            padding: 15px;
+            border-radius: 12px;
+            min-height: 80px;
+            cursor: text;
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: 0.95rem;
+        }
+        
+        .editable:hover {
+            background: #fff5e6;
+            border-color: #cd853f;
+        }
+        
+        .editable:focus {
+            outline: none;
+            border-style: solid;
+            border-color: #8b4513;
+            background: white;
+        }
+        
+        .editable.empty::before {
+            content: attr(data-placeholder);
+            color: #bbb;
+            font-style: italic;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(45deg, #ffe4b5, #ffd700);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid #daa520;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .highlight-box h4 {
+            color: #b8860b;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+        }
+        
+        .tips-section {
+            background: #fff8f0;
+            padding: 18px;
+            border-radius: 12px;
+            border-left: 4px solid #ff8c00;
+            margin: 20px 0;
+        }
+        
+        .tips-section h4 {
+            color: #d2691e;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .tips-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .tips-list li {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .tips-list li::before {
+            content: "💡";
+            position: absolute;
+            left: 0;
+        }
+        
+        .icon {
+            font-size: 1.3rem;
+        }
+        
+        .cost-summary {
+            background: rgba(255, 182, 193, 0.3);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 2px solid #ffb6c1;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .header p {
+                font-size: 1.1rem;
+            }
+            
+            .day-card {
+                padding: 20px;
+                margin-bottom: 25px;
+            }
+            
+            .day-header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .day-number {
+                margin-left: 0;
+            }
+            
+            .weather-clothing {
+                grid-template-columns: 1fr;
+            }
+            
+            .dining-accommodation {
+                grid-template-columns: 1fr;
+            }
+            
+            .prep-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.9rem;
+            }
+            
+            .day-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 云南五日自驾游详细攻略 🏔️</h1>
+            <p>合肥出发 • 洱海环湖 • 丽江古韵 • 香格里拉藏域风光</p>
+            <div class="route-info">
+                <span class="icon">✈️</span>
+                合肥 → 大理（飞机+租车） → 丽江 → 香格里拉 → 合肥（还车+飞机）
+            </div>
+        </div>
+        
+        <!-- 出行准备 -->
+        <div class="travel-preparation">
+            <div class="prep-title">
+                <span class="icon">🎯</span>
+                自驾出行全攻略
+            </div>
+            <div class="prep-grid">
+                <div class="prep-item">
+                    <h4><span class="icon">🚗</span>租车指南</h4>
+                    <p><strong>取车地点：</strong>大理机场/市区门店<br>
+                    <strong>还车地点：</strong>香格里拉机场<br>
+                    <strong>车型推荐：</strong>SUV（如途观、CR-V）适应山路<br>
+                    <strong>预订平台：</strong>神州、一嗨、携程等<br>
+                    <strong>必备证件：</strong>身份证、驾驶证、信用卡</p>
+                </div>
+                <div class="prep-item">
+                    <h4><span class="icon">🛣️</span>路线概览</h4>
+                    <p><strong>Day1：</strong>大理机场→洱海环湖→双廊（80km）<br>
+                    <strong>Day2：</strong>双廊→丽江古城（150km，2h）<br>
+                    <strong>Day3：</strong>丽江→虎跳峡→香格里拉（180km，3h）<br>
+                    <strong>总里程：</strong>约410公里<br>
+                    <strong>路况：</strong>全程高速+国道，路况良好</p>
+                </div>
+                <div class="prep-item">
+                    <h4><span class="icon">💰</span>费用预算</h4>
+                    <p><strong>租车费用：</strong>400-600元/天（含保险）<br>
+                    <strong>油费：</strong>约500-800元<br>
+                    <strong>过路费：</strong>约200-300元<br>
+                    <strong>停车费：</strong>20-50元/天<br>
+                    <strong>住宿：</strong>200-800元/晚<br>
+                    <strong>餐饮：</strong>150-300元/天/人</p>
+                </div>
+                <div class="prep-item">
+                    <h4><span class="icon">⚠️</span>自驾注意事项</h4>
+                    <p><strong>山路驾驶：</strong>注意弯道减速，保持车距<br>
+                    <strong>高原驾驶：</strong>避免急加速，注意供氧<br>
+                    <strong>加油站：</strong>及时加油，山区加油站较少<br>
+                    <strong>导航推荐：</strong>高德地图+百度地图双备份<br>
+                    <strong>应急物品：</strong>备胎、工具包、应急食品</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 第一天 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-info">
+                    <div class="date">📅 Day 1 | 8月17日（大理）</div>
+                    <div class="theme">
+                        <span class="icon">🌊</span>
+                        洱海环湖 + 白族风情 + 双廊民宿休闲
+                    </div>
+                </div>
+                <div class="day-number">1</div>
+            </div>
+            
+            <div class="driving-info">
+                <span class="icon">🚗</span>
+                <strong>自驾路线：</strong>大理机场取车 → 环海东路 → 才村 → 喜洲 → 双廊（约80公里，2小时）
+            </div>
+            
+            <div class="weather-clothing">
+                <div class="weather">
+                    <span class="icon">☀️</span>
+                    晴转多云，18~26°C，微风
+                </div>
+                <div class="clothing">
+                    <span class="icon">👕</span>
+                    休闲装+薄外套+舒适鞋+防晒帽
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">🌅</span>
+                    上午行程
+                </div>
+                <div class="time-content">
+                    <strong>09:00-10:30：</strong>抵达大理机场，取车，熟悉车况和导航<br>
+                    <strong>10:30-12:00：</strong>自驾前往洱海东岸，走环海东路欣赏洱海风光<br>
+                    <strong>12:00-12:30：</strong>到达才村，短暂停留拍照
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">🍽️</span>
+                    中午时光
+                </div>
+                <div class="time-content">
+                    <strong>12:30-14:00：</strong>抵达喜洲古镇，品尝当地特色午餐<br>
+                    <strong>推荐餐厅：</strong>"水杉小馆"（喜洲粑粑+酸辣洱海鱼）
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">📸</span>
+                    下午行程
+                </div>
+                <div class="time-content">
+                    <strong>14:00-16:00：</strong>游览喜洲古镇，参观白族民居建筑<br>
+                    <strong>16:00-17:30：</strong>前往海舌公园，拍摄洱海风光大片<br>
+                    <strong>17:30-18:30：</strong>驾车前往双廊，入住临湖民宿
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h4><span class="icon">🏨</span>住宿推荐</h4>
+                <p><strong>云上四季洱海民宿：</strong>湖景浴缸，可看日出日落<br>
+                <strong>慢·海岸民宿：</strong>阳台直面洱海，拍照绝佳<br>
+                <strong>预订建议：</strong>提前1-2周预订，旺季一房难求</p>
+            </div>
+            
+            <div class="dining-accommodation">
+                <div class="section-card">
+                    <div class="section-title">
+                        <span class="icon">🍜</span>
+                        晚餐推荐
+                    </div>
+                    <div class="editable empty" contenteditable="true" data-placeholder="推荐：海地生活餐厅（网红打卡地）、慢时光私厨（洱海边用餐）、双廊烤鱼、白族酸辣鱼..."></div>
+                </div>
+                
+                <div class="section-card">
+                    <div class="section-title">
+                        <span class="icon">🏨</span>
+                        住宿安排
+                    </div>
+                    <div class="editable empty" contenteditable="true" data-placeholder="填写具体预订的民宿名称、房型、联系方式..."></div>
+                </div>
+            </div>
+            
+            <div class="tips-section">
+                <h4><span class="icon">💡</span>今日自驾小贴士</h4>
+                <ul class="tips-list">
+                    <li>环海东路风景优美但弯道较多，注意控制车速</li>
+                    <li>双廊停车位紧张，建议选择提供停车的民宿</li>
+                    <li>洱海边拍照时注意车辆安全，不要长时间占用车道</li>
+                    <li>晚上看洱海日落，拍星空，记得带三脚架</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 第二天 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-info">
+                    <div class="date">📅 Day 2 | 8月18日（大理 → 丽江）</div>
+                    <div class="theme">
+                        <span class="icon">🏛️</span>
+                        丽江古城 + 束河夜景
+                    </div>
+                </div>
+                <div class="day-number">2</div>
+            </div>
+            
+            <div class="driving-info">
+                <span class="icon">🚗</span>
+                <strong>自驾路线：</strong>双廊 → 大丽高速 → 丽江古城（约150公里，2小时）
+            </div>
+            
+            <div class="weather-clothing">
+                <div class="weather">
+                    <span class="icon">⛅</span>
+                    多云，16~25°C，东南风2级
+                </div>
+                <div class="clothing">
+                    <span class="icon">👔</span>
+                    休闲装+薄外套+舒适鞋
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">🌅</span>
+                    上午行程
+                </div>
+                <div class="time-content">
+                    <strong>08:00-09:00：</strong>民宿早餐，欣赏洱海晨光<br>
+                    <strong>09:00-11:00：</strong>退房后驾车上大丽高速前往丽江<br>
+                    <strong>11:00-12:00：</strong>抵达丽江，寻找停车位，办理入住
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">🍽️</span>
+                    中午时光
+                </div>
+                <div class="time-content">
+                    <strong>12:00-14:00：</strong>品尝丽江特色午餐<br>
+                    <strong>推荐餐厅：</strong>"老字号刘记"（腊排骨火锅）或"滇味坊"（纳西家常菜）
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">🏛️</span>
+                    下午行程
+                </div>
+                <div class="time-content">
+                    <strong>14:00-16:00：</strong>游览丽江古城，参观木府、大水车<br>
+                    <strong>16:00-17:30：</strong>登狮子山，俯瞰古城全景<br>
+                    <strong>17:30-19:00：</strong>前往束河古镇，体验纳西文化
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h4><span class="icon">🏨</span>住宿推荐</h4>
+                <p><strong>古城边：</strong>枕水庭院民宿、漫居客栈（步行可达古城）<br>
+                <strong>束河镇：</strong>久居小筑、牧云谷酒店（更清净，有停车场）<br>
+                <strong>停车建议：</strong>选择有专用停车场的住宿</p>
+            </div>
+            
+            <div class="dining-accommodation">
+                <div class="section-card">
+                    <div class="section-title">
+                        <span class="icon">🍜</span>
+                        晚餐推荐
+                    </div>
+                    <div class="editable empty" contenteditable="true" data-placeholder="推荐：束河古镇藏食记、私房土锅鸡、纳西烤鱼、丽江粑粑..."></div>
+                </div>
+                
+                <div class="section-card">
+                    <div class="section-title">
+                        <span class="icon">🏨</span>
+                        住宿安排
+                    </div>
+                    <div class="editable empty" contenteditable="true" data-placeholder="填写具体预订的客栈名称、房型、停车安排..."></div>
+                </div>
+            </div>
+            
+            <div class="tips-section">
+                <h4><span class="icon">💡</span>今日自驾小贴士</h4>
+                <ul class="tips-list">
+                    <li>丽江古城内不能开车，需在外围找停车场</li>
+                    <li>推荐停车点：古城停车场、忠义市场停车场</li>
+                    <li>束河古镇相对安静，适合晚上漫步听民谣</li>
+                    <li>可小酌青稞酒，但第二天要开车注意休息</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 第三天 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-info">
+                    <div class="date">📅 Day 3 | 8月19日（丽江 → 香格里拉）</div>
+                    <div class="theme">
+                        <span class="icon">🏔️</span>
+                        虎跳峡徒步 + 初见藏区风光
+                    </div>
+                </div>
+                <div class="day-number">3</div>
+            </div>
+            
+            <div class="driving-info">
+                <span class="icon">🚗</span>
+                <strong>自驾路线：</strong>丽江 → 虎跳峡镇 → 香格里拉（约180公里，3小时）
+            </div>
+            
+            <div class="weather-clothing">
+                <div class="weather">
+                    <span class="icon">🌤️</span>
+                    晴转多云，14~23°C，山区温差大
+                </div>
+                <div class="clothing">
+                    <span class="icon">🥾</span>
+                    登山装+冲锋衣+登山鞋+背包
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">🌅</span>
+                    上午行程
+                </div>
+                <div class="time-content">
+                    <strong>08:00-09:00：</strong>客栈早餐，退房，准备登山装备<br>
+                    <strong>09:00-10:30：</strong>驾车前往虎跳峡，沿途欣赏金沙江风光<br>
+                    <strong>10:30-12:00：</strong>虎跳峡徒步1-1.5小时，感受峡谷震撼
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">🍽️</span>
+                    中午时光
+                </div>
+                <div class="time-content">
+                    <strong>12:00-13:30：</strong>桥头镇午餐<br>
+                    <strong>推荐餐厅：</strong>"三江饭庄"（牦牛干锅、炒鸡蛋酥油茶）
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">🏔️</span>
+                    下午行程
+                </div>
+                <div class="time-content">
+                    <strong>13:30-16:00：</strong>继续驾车前往香格里拉，适应高原环境<br>
+                    <strong>16:00-17:00：</strong>抵达香格里拉，入住独克宗古城附近<br>
+                    <strong>17:00-18:30：</strong>休息适应，轻松逛古城
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h4><span class="icon">🏨</span>住宿推荐</h4>
+                <p><strong>山之上藏式精品客栈：</strong>浓郁藏族风格装修<br>
+                <strong>茶马客栈：</strong>可步行到转经筒，地理位置佳<br>
+                <strong>高原提醒：</strong>海拔3200米，注意休息和补水</p>
+            </div>
+            
+            <div class="dining-accommodation">
+                <div class="section-card">
+                    <div class="section-title">
+                        <span class="icon">🍜</span>
+                        晚餐推荐
+                    </div>
+                    <div class="editable empty" contenteditable="true" data-placeholder="推荐：雪域藏家火锅、香格里拉藏香阁、酥油茶、青稞酒..."></div>
+                </div>
+                
+                <div class="section-card">
+                    <div class="section-title">
+                        <span class="icon">🏨</span>
+                        住宿安排
+                    </div>
+                    <div class="editable empty" contenteditable="true" data-placeholder="填写具体预订的藏式客栈名称、房型、停车位置..."></div>
+                </div>
+            </div>
+            
+            <div class="tips-section">
+                <h4><span class="icon">💡</span>今日自驾小贴士</h4>
+                <ul class="tips-list">
+                    <li>虎跳峡路段弯道较多，注意安全驾驶</li>
+                    <li>进入高原地区，避免剧烈运动和饮酒</li>
+                    <li>晚上看世界最大转经筒，可以祈福许愿</li>
+                    <li>准备一些高反药品，如红景天胶囊</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 第四天 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-info">
+                    <div class="date">📅 Day 4 | 8月20日（香格里拉）</div>
+                    <div class="theme">
+                        <span class="icon">🌲</span>
+                        普达措国家公园 + 纳帕海草原 + 高原氧吧
+                    </div>
+                </div>
+                <div class="day-number">4</div>
+            </div>
+            
+            <div class="driving-info">
+                <span class="icon">🚗</span>
+                <strong>自驾路线：</strong>香格里拉 → 普达措（22km） → 纳帕海（8km） → 小中甸（40km）
+            </div>
+            
+            <div class="weather-clothing">
+                <div class="weather">
+                    <span class="icon">❄️</span>
+                    多云转晴，8~20°C，高原紫外线强
+                </div>
+                <div class="clothing">
+                    <span class="icon">🧥</span>
+                    保暖外套+帽子+墨镜+防晒霜
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">🌅</span>
+                    上午行程
+                </div>
+                <div class="time-content">
+                    <strong>08:00-09:00：</strong>客栈早餐，准备户外装备<br>
+                    <strong>09:00-09:30：</strong>驾车前往普达措国家公园<br>
+                    <strong>09:30-12:00：</strong>乘环保车游览碧塔海、属都湖等高原湖泊森林
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">🍽️</span>
+                    中午时光
+                </div>
+                <div class="time-content">
+                    <strong>12:00-13:30：</strong>景区外用餐<br>
+                    <strong>推荐餐厅：</strong>"玛吉阿米藏餐厅"或"扎西藏家乐"
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">🌾</span>
+                    下午行程
+                </div>
+                <div class="time-content">
+                    <strong>13:30-15:30：</strong>自驾前往纳帕海草原，环湖自驾拍摄<br>
+                    <strong>15:30-17:00：</strong>如有时间，前往小中甸花海（8月格桑花盛开）<br>
+                    <strong>17:00-18:00：</strong>返回香格里拉古城
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h4><span class="icon">📸</span>拍摄攻略</h4>
+                <p><strong>普达措：</strong>高原湖泊倒影，原始森林风光<br>
+                <strong>纳帕海：</strong>牦牛群、湿地、远山雪峰<br>
+                <strong>小中甸：</strong>格桑花海，藏式民居背景<br>
+                <strong>注意：</strong>高原紫外线强，注意相机和皮肤防护</p>
+            </div>
+            
+            <div class="dining-accommodation">
+                <div class="section-card">
+                    <div class="section-title">
+                        <span class="icon">🍜</span>
+                        晚餐推荐
+                    </div>
+                    <div class="editable empty" contenteditable="true" data-placeholder="推荐：锅庄藏式火锅+青稞酒、牦牛肉、糌粑、酥油茶..."></div>
+                </div>
+                
+                <div class="section-card">
+                    <div class="section-title">
+                        <span class="icon">🏨</span>
+                        住宿安排
+                    </div>
+                    <div class="editable empty" contenteditable="true" data-placeholder="继续住香格里拉客栈，可参加藏式歌舞互动..."></div>
+                </div>
+            </div>
+            
+            <div class="tips-section">
+                <h4><span class="icon">💡</span>今日自驾小贴士</h4>
+                <ul class="tips-list">
+                    <li>普达措内不能自驾，需乘坐环保车游览</li>
+                    <li>纳帕海环湖路况良好，注意保护草原环境</li>
+                    <li>高原地区不要剧烈奔跑，慢行防高反</li>
+                    <li>拍照时注意不要惊扰牦牛群</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 第五天 -->
+        <div class="day-card">
+            <div class="day-header">
+                <div class="day-info">
+                    <div class="date">📅 Day 5 | 8月21日（香格里拉 → 离程）</div>
+                    <div class="theme">
+                        <span class="icon">✈️</span>
+                        松赞林寺朝圣 + 还车返程
+                    </div>
+                </div>
+                <div class="day-number">5</div>
+            </div>
+            
+            <div class="driving-info">
+                <span class="icon">🚗</span>
+                <strong>自驾路线：</strong>香格里拉古城 → 松赞林寺（5km） → 香格里拉机场（15km）
+            </div>
+            
+            <div class="weather-clothing">
+                <div class="weather">
+                    <span class="icon">🌈</span>
+                    晴，10~22°C，高原早晚温差大
+                </div>
+                <div class="clothing">
+                    <span class="icon">🧣</span>
+                    便装+外套+舒适鞋
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">🌅</span>
+                    上午行程
+                </div>
+                <div class="time-content">
+                    <strong>08:00-09:00：</strong>客栈早餐，整理行李<br>
+                    <strong>09:00-11:00：</strong>参观松赞林寺，"小布达拉宫"朝圣之旅<br>
+                    <strong>11:00-12:00：</strong>独克宗古城最后游览，购买纪念品
+                </div>
+            </div>
+            
+            <div class="time-section">
+                <div class="time-title">
+                    <span class="icon">✈️</span>
+                    离程安排
+                </div>
+                <div class="time-content">
+                    <strong>12:00-13:00：</strong>前往香格里拉机场，办理还车手续<br>
+                    <strong>13:00-14:00：</strong>机场午餐，办理登机手续<br>
+                    <strong>下午/傍晚：</strong>搭乘航班返回合肥（可选直飞或经昆明中转）
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h4><span class="icon">🛍️</span>特产购买指南</h4>
+                <p><strong>推荐特产：</strong>手工银饰、藏香、牦牛奶片、虫草、天麻<br>
+                <strong>购买地点：</strong>独克宗古城、松赞林寺附近<br>
+                <strong>注意事项：</strong>贵重物品要辨别真伪，适量购买</p>
+            </div>
+            
+            <div class="dining-accommodation">
+                <div class="section-card">
+                    <div class="section-title">
+                        <span class="icon">🍜</span>
+                        最后一餐
+                    </div>
+                    <div class="editable empty" contenteditable="true" data-placeholder="推荐：藏式早餐、酥油茶、青稞饼，或机场简餐..."></div>
+                </div>
+                
+                <div class="section-card">
+                    <div class="section-title">
+                        <span class="icon">✈️</span>
+                        返程信息
+                    </div>
+                    <div class="editable empty" contenteditable="true" data-placeholder="填写航班信息、还车手续、行李安排..."></div>
+                </div>
+            </div>
+            
+            <div class="tips-section">
+                <h4><span class="icon">💡</span>还车返程小贴士</h4>
+                <ul class="tips-list">
+                    <li>还车前检查车况，拍照留存</li>
+                    <li>提前2小时到达机场，高原机场流程较慢</li>
+                    <li>整理照片和旅行日记，记录美好回忆</li>
+                    <li>注意高原返回平原可能的身体适应</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 费用总结 -->
+        <div class="cost-summary">
+            <div class="prep-title">
+                <span class="icon">💰</span>
+                五日自驾游费用总结
+            </div>
+            <div class="prep-grid">
+                <div class="prep-item">
+                    <h4><span class="icon">✈️</span>交通费用</h4>
+                    <p><strong>往返机票：</strong>1500-3000元/人<br>
+                    <strong>租车费用：</strong>2000-3000元（5天）<br>
+                    <strong>油费过路费：</strong>800-1200元<br>
+                    <strong>小计：</strong>4300-7200元</p>
+                </div>
+                <div class="prep-item">
+                    <h4><span class="icon">🏨</span>住宿费用</h4>
+                    <p><strong>双廊民宿：</strong>400-800元/晚<br>
+                    <strong>丽江客栈：</strong>300-600元/晚<br>
+                    <strong>香格里拉：</strong>200-500元/晚×2<br>
+                    <strong>小计：</strong>1100-2700元</p>
+                </div>
+                <div class="prep-item">
+                    <h4><span class="icon">🎫</span>门票费用</h4>
+                    <p><strong>丽江古城：</strong>50元<br>
+                    <strong>木府：</strong>60元<br>
+                    <strong>普达措：</strong>258元<br>
+                    <strong>松赞林寺：</strong>115元<br>
+                    <strong>小计：</strong>483元/人</p>
+                </div>
+                <div class="prep-item">
+                    <h4><span class="icon">🍽️</span>餐饮费用</h4>
+                    <p><strong>正餐：</strong>100-200元/餐/人<br>
+                    <strong>特色小食：</strong>50-100元/天/人<br>
+                    <strong>5天预算：</strong>750-1500元/人<br>
+                    <strong>双人小计：</strong>1500-3000元</p>
+                </div>
+            </div>
+            <div class="highlight-box" style="margin-top: 20px;">
+                <h4><span class="icon">📊</span>总费用预算（双人）</h4>
+                <p><strong>经济型：</strong>8000-10000元（约4000-5000元/人）<br>
+                <strong>舒适型：</strong>12000-15000元（约6000-7500元/人）<br>
+                <strong>豪华型：</strong>18000-25000元（约9000-12500元/人）</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 处理可编辑区域的交互
+        document.addEventListener('DOMContentLoaded', function() {
+            const editableElements = document.querySelectorAll('.editable');
+            
+            editableElements.forEach(element => {
+                element.addEventListener('focus', function() {
+                    if (this.classList.contains('empty')) {
+                        this.classList.remove('empty');
+                        this.textContent = '';
+                    }
+                });
+                
+                element.addEventListener('blur', function() {
+                    if (this.textContent.trim() === '') {
+                        this.classList.add('empty');
+                    } else {
+                        this.classList.remove('empty');
+                    }
+                });
+                
+                element.addEventListener('input', function() {
+                    if (this.textContent.trim() !== '') {
+                        this.classList.remove('empty');
+                    }
+                });
+                
+                element.addEventListener('paste', function(e) {
+                    e.preventDefault();
+                    const text = (e.originalEvent || e).clipboardData.getData('text/plain');
+                    document.execCommand('insertText', false, text);
+                });
+            });
+        });
+        
+        // 添加交互动效
+        document.querySelectorAll('.day-card, .travel-preparation, .cost-summary').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px) scale(1.01)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+        
+        // 平滑滚动
+        document.documentElement.style.scrollBehavior = 'smooth';
+        
+        // 页面加载动画
+        window.addEventListener('load', function() {
+            const cards = document.querySelectorAll('.day-card, .travel-preparation, .cost-summary');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.8s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 150);
+            });
+        });
+        
+        // 添加打印样式优化
+        const style = document.createElement('style');
+        style.textContent = `
+            @media print {
+                body { background: white; }
+                .day-card, .travel-preparation, .cost-summary {
+                    box-shadow: none;
+                    border: 1px solid #ddd;
+                    page-break-inside: avoid;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
